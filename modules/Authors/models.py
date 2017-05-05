@@ -24,3 +24,6 @@ class Author(models.Model):
     genero_literario = models.CharField(choices=GENEROS,max_length=100)
     edad = models.IntegerField()
     vivo = models.BooleanField(default=True)
+
+    def __str__(self):
+        return "Autor: %s %s " % (self.nombre,self.apellidos)

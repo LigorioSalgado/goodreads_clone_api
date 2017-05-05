@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "modules.Users",
     "modules.Books",
     "modules.Authors",
+    "rest_framework",
 
 ]
 

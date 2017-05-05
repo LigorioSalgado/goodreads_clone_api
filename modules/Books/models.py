@@ -27,6 +27,9 @@ class Book(models.Model):
     rating = models.DecimalField(max_digits=3,decimal_places=2,default=0.00)
     genero_literario = models.CharField(choices=GENEROS,max_length=100)
 
+    def __str_(self):
+        return "Libro: %s " % (self.nombre)
+
 class Comments(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
     book = models.ForeignKey(Book,on_delete=models.CASCADE)
