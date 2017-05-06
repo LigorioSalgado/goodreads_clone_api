@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "modules.Books",
     "modules.Authors",
     "rest_framework",
+    "django_filters",
 
 ]
 
