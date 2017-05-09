@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "modules.Authors",
     "rest_framework",
     "django_filters",
+    'rest_framework_swagger',
 
 ]
 
