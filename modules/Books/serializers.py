@@ -16,7 +16,7 @@ class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
         #exclude = ("rating",)
-        fields = ('id','nombre','descripcion','ISBN','comentarios')
+        fields = ('id','nombre','descripcion','ISBN','comentarios','autor')
     
 class BookNewSerializer(serializers.ModelSerializer):
 

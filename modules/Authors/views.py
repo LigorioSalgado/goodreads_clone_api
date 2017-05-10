@@ -16,21 +16,7 @@ class ListAuthor(APIView):
 
     def post(self,request):
         """
-         summary: Time Estimates
-         description: The Time Estimates endpoint returns ETAs for all products offered at a given location, with the responses expressed as integers in seconds. We recommend that this endpoint be called every minute to provide the most accurate, up-to-date ETAs.
-      parameters:
-        - name: start_latitude
-          in: query
-          description: Latitude component of start location.
-          required: true
-          type: number
-          format: double
-        - name: start_longitude
-          in: query
-          description: Longitude component of start location.
-          required: true
-          type: number
-          format: double
+         
         """
         serializer = AuthorSerializer(data=request.data)
         if serializer.is_valid():
