@@ -2,7 +2,7 @@ from .base import *
 import dj_database_url
 import os
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'uo*a=9+3enc3zu(i8hx&%p=&&qyzxikncag!rvmr^@rbs62xk^'
 
 DATABASES = dict()
 DATABASES['default'] = dj_database_url.config()
