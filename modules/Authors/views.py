@@ -15,9 +15,6 @@ class ListAuthor(APIView):
         return Response(serializer.data,status=status.HTTP_200_OK)
 
     def post(self,request):
-        """
-         
-        """
         serializer = AuthorSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
